@@ -13,9 +13,7 @@ export default class PunctualityTableRow extends Component {
     color: 'white',
     padding: 3
   };
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const row = this.props.row;
     return (
