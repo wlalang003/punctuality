@@ -5,6 +5,7 @@ import * as actions from '../actions';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import PunctualityTable from './PunctualityTable';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
 
 class App extends Component {
   componentDidMount() {
@@ -13,7 +14,17 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <PunctualityTable />
+        <Card>
+          <CardHeader
+            title="Carlo"
+            style={{ borderBottom: '1px solid rgb(201, 227, 230)' }}
+            titleStyle={{ fontSize: 20 }}
+            avatar="https://udemy-images.udemy.com/user/50x50/28935206_a773.jpg"
+          />
+          <CardText>
+            <PunctualityTable />
+          </CardText>
+        </Card>
       </MuiThemeProvider>
     );
   }
